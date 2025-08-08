@@ -1,7 +1,6 @@
 import { CardProps } from "../../interface";
 import "./Card.css"
 
-// Компонент Card
 function Card({ cardHeader, content }: CardProps) {
   return (
     <div className="card">
@@ -10,16 +9,16 @@ function Card({ cardHeader, content }: CardProps) {
 
             {("email" in content) && ( 
             <div>
-                Email: {content.email}<br />
-                Телефон: {content.phone ?? 'Телефон не указан'}
+                <p>Email: {content.email}</p>
+                <p>Телефон: {content.phone ?? 'Телефон не указан'}</p>
             </div>
             )}
 
             {("city" in content && "country" in content) && ( 
             <div>
-                Страна: {content.country}<br />
-                Город: {content.city}<br />
-                Адрес: {content.address ?? 'Адрес не указан'}
+                <p>Страна: {content.country}</p>
+                <p>Город: {content.city}</p>
+                <p>Адрес: {content.address ?? 'Адрес не указан'}</p>
             </div>
             )}
 

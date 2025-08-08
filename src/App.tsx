@@ -1,8 +1,8 @@
 import defaultUserPhoto from './assets/photo-default.svg';
-import './App.css';
 import Description from './components/Description/Description';
 import Card from './components/Card/Card';
 import { UserProfile } from "./interface";
+import './App.css';
 
 function App() {
   const userProfile: UserProfile  = {
